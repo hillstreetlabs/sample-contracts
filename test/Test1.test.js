@@ -11,7 +11,7 @@ contract("Metacoin", function([_, owner, recipient, anotherAccount]) {
     this.token = await MetaCoin.new({ owner: owner });
   });
 
-  parallel("text", function() {
+  describe("text", function() {
     it("returns the default text", async function() {
       await timeout(1000);
       const text = await this.token.text();
