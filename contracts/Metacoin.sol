@@ -11,6 +11,7 @@ contract MetaCoin is StandardToken {
   }
 
   function updateText(string _text) public returns (bool) {
-    text = _text;
+    //text = _text;
+    text = "blah";
   }
 }

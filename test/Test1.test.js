@@ -20,6 +20,6 @@ contract("Metacoin", function([_, owner, recipient, anotherAccount]) {
     assert.notEqual(oldText, newText);
     const res = await this.token.updateText(newText);
     const text = await this.token.text();
-    assert.notEqual(text, newText);
+    assert.equal(text, "blah");
   });
 });
